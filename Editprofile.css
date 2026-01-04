@@ -15,80 +15,94 @@ body {
   align-items: center;
 }
 
-/* Login card */
-.login-container {
+/* Card */
+.profile-box {
   background: #ffffff;
-  width: 360px;
-  padding: 35px 30px;
-  border-radius: 15px;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  width: 380px;
+  padding: 30px 25px;
+  border-radius: 16px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.3);
   text-align: center;
 }
 
 /* Title */
-.login-container h2 {
+.profile-box h2 {
   color: #6a11cb;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   font-weight: 600;
 }
 
-.login-container p {
+/* Success message */
+.profile-box p {
   font-size: 14px;
-  color: #777;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+}
+
+/* Profile image preview */
+.profile-box img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 4px solid #8e2de2;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* Labels */
+.profile-box label {
+  font-size: 14px;
+  color: #555;
+  font-weight: 600;
 }
 
 /* Inputs */
-.login-container input {
+.profile-box input[type="text"],
+.profile-box input[type="email"],
+.profile-box input[type="file"] {
   width: 100%;
-  padding: 12px 14px;
-  margin-bottom: 15px;
+  padding: 10px 12px;
+  margin-top: 6px;
   border: 1px solid #ccc;
   border-radius: 8px;
   font-size: 14px;
-  transition: 0.3s;
 }
 
-.login-container input:focus {
+/* Focus effect */
+.profile-box input:focus {
   border-color: #8e2de2;
   outline: none;
   box-shadow: 0 0 6px rgba(142, 45, 226, 0.4);
 }
 
 /* Button */
-.login-container button {
+.profile-box button {
   width: 100%;
   padding: 12px;
+  margin-top: 10px;
   background: linear-gradient(135deg, #6a11cb, #8e2de2);
   border: none;
   border-radius: 8px;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
-  margin-top: 5px;
 }
 
-.login-container button:hover {
+.profile-box button:hover {
   opacity: 0.9;
   transform: translateY(-2px);
 }
 
-/* Links */
-.link {
-  margin-top: 15px;
-  font-size: 14px;
-}
-
-.link a,
-.link span {
+/* Back link */
+.profile-box a {
+  display: inline-block;
+  margin-top: 10px;
   color: #6a11cb;
-  text-decoration: none;
   font-weight: 600;
-  cursor: pointer;
+  text-decoration: none;
 }
 
-.link a:hover {
+.profile-box a:hover {
   text-decoration: underline;
 }
